@@ -1,0 +1,8 @@
+<project name="java" default="jar" basedir=".">
+<target name="compile">
+<javac srcdir="src" destdir="class"/>
+</target>
+<target name="jar" depends="compile">
+<jar basedir="class" destfile="jar/sun.jar"/>
+</target>
+</project>
